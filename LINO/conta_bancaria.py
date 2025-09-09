@@ -9,13 +9,15 @@ class ContaBancaria:
         self.titular = titular
         
     def exibir_saldo(self):
-        print(f"Saldo Atual: R$ {self.saldo:.2f}")
+        print(f"Saldo Atual: R$ {self.saldo}")
         
     def exibir_dados_conta(self):
         print(f' === Dados da Conta ===')
         print(f'Agência: {self.agencia}')
         print(f'Número da Conta: {self.numero_conta}')
         print(f'Tipo de Conta: {self.tipo_conta}')
-        print(f'Saldo: {self.saldo:.2f}')
+        print(f'Saldo: {self.saldo}')
         print(f'Titular: {self.titular.nome}')
         
+    def exibir_dados_pessoais(self):
+        self.titular.exibir_dados_pessoais()
